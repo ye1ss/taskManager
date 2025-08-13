@@ -9,7 +9,7 @@ import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 
-public class TaskManager {
+public class main {
 
     // ---- Modelo ----
     public static class Task {
@@ -35,7 +35,7 @@ public class TaskManager {
     private final Path store = Paths.get("tasks.json"); // o Paths.get(System.getProperty("user.home"), "tasks.json")
 
     // ---- UI ----
-    public TaskManager() {
+    public main() {
         load(); // carga si existe
 
         JFrame frame = new JFrame("Task Manager");
@@ -155,6 +155,8 @@ public class TaskManager {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(TaskManager::new);
+        String json = new Gson().toJson(new String[] { "hola", "mundo" });
+        System.out.println(json);
+        SwingUtilities.invokeLater(main::new);
     }
 }
