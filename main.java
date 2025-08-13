@@ -155,8 +155,6 @@ public class main {
     }
 
     public static void main(String[] args) {
-        String json = new Gson().toJson(new String[] { "hola", "mundo" });
-        System.out.println(json);
         SwingUtilities.invokeLater(main::new);
     }
 }
