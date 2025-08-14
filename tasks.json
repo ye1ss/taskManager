@@ -1,6 +1,10 @@
 [
   {
-    "title": "burro",
+    "title": "compra",
     "done": true
+  },
+  {
+    "title": "paseo",
+    "done": false
   }
 ]
